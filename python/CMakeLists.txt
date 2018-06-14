@@ -24,7 +24,7 @@ include_directories(${THIRDPARTY_INCLUDES} ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_S
 
 # Which interface files should be used for creating modules
 set(MODULE_INTERFACE_FILES 
-    # file1.i
+    template.i
 )
 
 # Use C++ mode for SWIG interface files, turn on all warnings
