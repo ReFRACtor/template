@@ -1,6 +1,9 @@
 template_install_path=@CMAKE_INSTALL_PREFIX@
 template_lib_path=$template_install_path/lib
-template_python_path=$template_install_path/python
+
+if [ -n "@PYTHON_INSTALL_DIR@" ]; then
+    template_python_path=$template_install_path/@PYTHON_INSTALL_DIR@
+fi
 
 if [ -n "$LD_LIBRARY_PATH" ]; then
   export LD_LIBRARY_PATH=$template_lib_path:$LD_LIBRARY_PATH
