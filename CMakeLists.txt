@@ -56,7 +56,7 @@ list(APPEND THIRDPARTY_LIBRARIES ${HDF5_LIBRARIES})
 include_directories(${THIRDPARTY_INCLUDES})
 
 # Find Boost
-find_package(Boost REQUIRED COMPONENTS system unit_test_framework)
+find_package(Boost REQUIRED COMPONENTS system)
 list(APPEND THIRDPARTY_INCLUDES ${Boost_INCLUDE_DIRS})
 list(APPEND THIRDPARTY_LIBRARIES ${Boost_LIBRARIES})
 
