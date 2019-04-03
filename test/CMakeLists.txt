@@ -3,6 +3,7 @@ include_directories(${TEMPLATE_TEST_DIR} ${TEMPLATE_LIB_DIR})
 
 # Add each test file to TEST_SOURCES
 set(TEST_SOURCES
+    test_all.cc
     #file1_test.cc
 )
 
